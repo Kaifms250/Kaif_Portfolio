@@ -61,7 +61,7 @@ const Hero = () => {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         {/* Photo */}
         <div className="flex justify-center items-center mb-8 slide-up">
-          <div className="w-48 h-48 rounded-full bg-muted border-4 border-border overflow-hidden shadow-lg mx-auto">
+          <div className="w-64 h-64 sm:w-72 sm:h-72 rounded-full bg-muted border-4 border-border overflow-hidden shadow-lg mx-auto">
             <img
               src="/profile.png"
               alt="Mohammad Kaif"
@@ -102,9 +102,9 @@ const Hero = () => {
         {/* Social Links */}
         <div className="flex justify-center space-x-6 mb-16 fade-in-up" style={{ animationDelay: "0.9s" }}>
           {[
-            { icon: Github, href: "#", label: "GitHub" },
-            { icon: Linkedin, href: "#", label: "LinkedIn" },
-            { icon: Mail, href: "#", label: "Email" },
+            { icon: Github, href: "https://github.com/Kaifms250", label: "GitHub" },
+            { icon: Linkedin, href: "https://linkedin.com/in/mohammad-kaif", label: "LinkedIn" },
+            { icon: Mail, href: "mailto:mdkaif2213@gmail.com", label: "Email" },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
