@@ -65,7 +65,7 @@ const Hero = () => {
             <img
               src="/profile.png"
               alt="Mohammad Kaif"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover object-[40%_25%]"
             />
           </div>
         </div>
