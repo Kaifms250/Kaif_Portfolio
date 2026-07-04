@@ -62,19 +62,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "hello@portfolio.dev",
-      href: "mailto:hello@portfolio.dev",
+      content: "mdkaif2213@gmail.com",
+      href: "mailto:mdkaif2213@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      content: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      content: "+91 8421303308",
+      href: "tel:+918421303308",
     },
     {
       icon: MapPin,
       title: "Location",
-      content: "San Francisco, CA",
+      content: "Pune, India",
       href: "#",
     },
   ];
