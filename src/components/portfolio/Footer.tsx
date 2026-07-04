@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 items-center">
           {/* Logo/Brand */}
           <div>
-            <h3 className="text-2xl font-bold hero-text mb-2">Portfolio</h3>
+            <h3 className="text-2xl font-bold hero-text mb-2">Mohammad Kaif</h3>
             <p className="text-muted-foreground">
               Crafting digital experiences with passion and precision.
             </p>
@@ -61,7 +61,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center text-muted-foreground text-sm">
           <p className="flex items-center">
-            © {currentYear} Portfolio. Made with{" "}
+            © {currentYear} Mohammad Kaif. Made with{" "}
             <Heart size={16} className="mx-1 text-foreground animate-pulse" />
             and lots of coffee.
           </p>
