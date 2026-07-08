@@ -107,7 +107,7 @@ const About = () => {
           >
             {[
               { number: "5+", label: "Projects Completed" },
-              { number: "3+", label: "Years Experience" },
+              { number: "1+", label: "Year Experience" },
               { number: "100%", label: "Client Satisfaction" },
               { number: "24/7", label: "Dedication" },
             ].map((stat, index) => (
