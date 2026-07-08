@@ -71,13 +71,13 @@ const Experience = () => {
                     rel="noopener noreferrer"
                     className="text-primary font-semibold hover:underline inline-flex items-center gap-1"
                   >
-                    Millora
+                    Milora
                     <ExternalLink size={14} />
                   </a>
                   <span className="text-muted-foreground text-sm">Feb 2026 - Present</span>
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-4 text-sm sm:text-base">
-                  During my internship at Millora, I worked on real-world projects alongside a talented
+                  During my internship at Milora, I worked on real-world projects alongside a talented
                   engineering team. I strengthened my skills in full-stack development, collaborated with
                   cross-functional teams, and contributed to building scalable web applications using
                   modern frameworks and best practices.

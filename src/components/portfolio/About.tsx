@@ -106,7 +106,7 @@ const About = () => {
             }`}
           >
             {[
-              { number: "50+", label: "Projects Completed" },
+              { number: "5+", label: "Projects Completed" },
               { number: "3+", label: "Years Experience" },
               { number: "100%", label: "Client Satisfaction" },
               { number: "24/7", label: "Dedication" },

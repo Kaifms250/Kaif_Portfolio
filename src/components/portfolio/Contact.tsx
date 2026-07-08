@@ -81,7 +81,7 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: Github, label: "GitHub", href: "https://github.com" },
-    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/mohammad-kaif-83b062258/" },
     { icon: Twitter, label: "Twitter", href: "https://twitter.com" },
   ];
 

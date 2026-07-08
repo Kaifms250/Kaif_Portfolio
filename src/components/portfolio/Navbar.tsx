@@ -109,7 +109,7 @@ const Navbar = () => {
             <a href="https://github.com/Kaifms250" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border hover:border-primary text-foreground hover:text-primary transition-all duration-300">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com/in/mohammad-kaif" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border hover:border-primary text-foreground hover:text-primary transition-all duration-300">
+            <a href="https://www.linkedin.com/in/mohammad-kaif-83b062258/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full border border-border hover:border-primary text-foreground hover:text-primary transition-all duration-300">
               <Linkedin size={20} />
             </a>
             <a href="mailto:mdkaif2213@gmail.com" className="p-3 rounded-full border border-border hover:border-primary text-foreground hover:text-primary transition-all duration-300">

@@ -132,7 +132,7 @@ const Projects = () => {
                 <div
                   className={`absolute inset-0 bg-foreground/10 backdrop-blur-sm flex items-center justify-center gap-4 transition-all duration-300 ${
                     hoveredProject === index ? "opacity-100" : "opacity-0"
-                  }`}
+                  } sm:opacity-0 sm:group-hover:opacity-100`}
                 >
                   <Button
                     size="sm"

@@ -103,7 +103,7 @@ const Hero = () => {
         <div className="flex justify-center space-x-6 mb-16 fade-in-up" style={{ animationDelay: "0.9s" }}>
           {[
             { icon: Github, href: "https://github.com/Kaifms250", label: "GitHub" },
-            { icon: Linkedin, href: "https://linkedin.com/in/mohammad-kaif", label: "LinkedIn" },
+            { icon: Linkedin, href: "https://www.linkedin.com/in/mohammad-kaif-83b062258/", label: "LinkedIn" },
             { icon: Mail, href: "mailto:mdkaif2213@gmail.com", label: "Email" },
           ].map(({ icon: Icon, href, label }) => (
             <a
