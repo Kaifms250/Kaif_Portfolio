@@ -26,6 +26,8 @@ const Footer = () => {
             <div className="flex flex-wrap justify-center gap-4">
               {[
                 { label: "About", href: "#about" },
+                { label: "Academics", href: "#academics" },
+                { label: "Experience", href: "#experience" },
                 { label: "Projects", href: "#projects" },
                 { label: "Skills", href: "#skills" },
                 { label: "Resume", href: "#resume" },

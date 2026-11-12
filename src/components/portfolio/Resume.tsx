@@ -192,15 +192,15 @@ const Resume = () => {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-wrap items-center gap-2.5">
+          <div className="flex flex-wrap items-center gap-2 w-full sm:w-auto">
             {/* Download Button */}
             <Button
               asChild
-              className="bg-primary hover:bg-primary/90 text-primary-foreground glow-effect transition-all duration-300 hover:scale-105"
+              className="flex-1 sm:flex-initial min-h-[42px] bg-primary hover:bg-primary/90 text-primary-foreground glow-effect transition-all duration-300 active:scale-95 text-xs sm:text-sm font-semibold"
             >
               <a href={RESUME_PATH} download={RESUME_FILENAME}>
                 <Download className="w-4 h-4 mr-2" />
-                Download
+                Download PDF
               </a>
             </Button>
 
@@ -209,7 +209,7 @@ const Resume = () => {
               <DropdownMenuTrigger asChild>
                 <Button
                   variant="outline"
-                  className="border-border hover:border-primary text-foreground hover:text-primary transition-all duration-300 hover:scale-105"
+                  className="flex-1 sm:flex-initial min-h-[42px] border-border hover:border-primary text-foreground hover:text-primary transition-all duration-300 active:scale-95 text-xs sm:text-sm font-semibold"
                 >
                   <Share2 className="w-4 h-4 mr-2" />
                   Share
@@ -269,7 +269,7 @@ const Resume = () => {
               asChild
               variant="outline"
               size="icon"
-              className="border-border hover:border-primary text-foreground hover:text-primary transition-all duration-300 hover:scale-105"
+              className="min-h-[42px] min-w-[42px] border-border hover:border-primary text-foreground hover:text-primary transition-all duration-300 active:scale-95"
               title="Open in new tab"
             >
               <a href={RESUME_PATH} target="_blank" rel="noopener noreferrer">
@@ -282,7 +282,7 @@ const Resume = () => {
             <Button
               variant="outline"
               size="icon"
-              className="border-border hover:border-primary text-foreground hover:text-primary transition-all duration-300 hover:scale-105"
+              className="min-h-[42px] min-w-[42px] border-border hover:border-primary text-foreground hover:text-primary transition-all duration-300 active:scale-95"
               onClick={() => setIsFullscreenOpen(true)}
               title="Expand preview"
             >
@@ -329,7 +329,7 @@ const Resume = () => {
           </div>
 
           {/* Document Viewer Frame */}
-          <div className="relative w-full h-[650px] md:h-[820px] bg-muted/20">
+          <div className="relative w-full h-[500px] sm:h-[650px] md:h-[820px] bg-muted/20">
             <object
               data={`${RESUME_PATH}#toolbar=1&navpanes=0`}
               type="application/pdf"

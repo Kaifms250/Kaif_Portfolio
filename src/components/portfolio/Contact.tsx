@@ -189,7 +189,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       placeholder="Your name"
                       required
-                      className="border-border focus:border-primary transition-colors duration-300"
+                      className="border-border focus:border-primary transition-colors duration-300 text-base sm:text-sm min-h-[44px]"
                     />
                   </div>
                   <div className="space-y-2">
@@ -202,7 +202,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       placeholder="your.email@example.com"
                       required
-                      className="border-border focus:border-primary transition-colors duration-300"
+                      className="border-border focus:border-primary transition-colors duration-300 text-base sm:text-sm min-h-[44px]"
                     />
                   </div>
                 </div>
@@ -216,7 +216,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     placeholder="Project discussion"
                     required
-                    className="border-border focus:border-primary transition-colors duration-300"
+                    className="border-border focus:border-primary transition-colors duration-300 text-base sm:text-sm min-h-[44px]"
                   />
                 </div>
 
@@ -228,16 +228,16 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     placeholder="Tell me about your project..."
-                    rows={6}
+                    rows={5}
                     required
-                    className="border-border focus:border-primary transition-colors duration-300 resize-none"
+                    className="border-border focus:border-primary transition-colors duration-300 resize-none text-base sm:text-sm p-3"
                   />
                 </div>
 
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground glow-effect transition-all duration-300 hover:scale-105"
+                  className="w-full min-h-[48px] bg-primary hover:bg-primary/90 text-primary-foreground glow-effect transition-all duration-300 active:scale-95 text-base font-semibold"
                 >
                   {isSubmitting ? (
                     <>

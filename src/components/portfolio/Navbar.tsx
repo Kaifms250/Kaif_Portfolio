@@ -27,6 +27,8 @@ const Navbar = () => {
   const navItems = [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
+    { label: "Academics", href: "#academics" },
+    { label: "Experience", href: "#experience" },
     { label: "Projects", href: "#projects" },
     { label: "Skills", href: "#skills" },
     { label: "Resume", href: "#resume" },
@@ -50,17 +52,23 @@ const Navbar = () => {
             : "bg-transparent"
         }`}
       >
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-3.5">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold hero-text"></div>
+            <button
+              onClick={() => scrollToSection("#home")}
+              className="text-xl font-bold hero-text hover:opacity-80 transition-opacity"
+              aria-label="Mohammad Kaif Home"
+            >
+              MK<span className="text-primary">.</span>
+            </button>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-5 lg:space-x-7 text-sm font-medium">
               {navItems.map((item) => (
                 <button
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-foreground hover:text-primary transition-colors duration-300 relative group"
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-300 relative group py-1"
                 >
                   {item.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
@@ -72,7 +80,8 @@ const Navbar = () => {
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden"
+              className="md:hidden w-11 h-11"
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
