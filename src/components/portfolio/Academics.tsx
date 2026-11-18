@@ -61,43 +61,40 @@ const Academics = () => {
         "Computer Networks",
       ],
       hasExpandableDetails: true,
-      isPlaceholder: false,
     },
     {
-      level: "Higher Secondary",
+      level: "Higher Secondary Certificate",
       degree: "Class 12th (HSC)",
-      field: "Science Stream (PCM / Computer Science)",
-      institution: "Junior College / Higher Secondary School",
-      period: "Completed",
+      field: "Science Stream (Physics, Chemistry, Mathematics, Biology)",
+      institution: "Sahakar Vidya Mandir and Jr College, Buldhana",
+      period: "Completed in 2022",
       status: "Completed",
-      grade: "Details to be added",
+      grade: "Score: 88.83%",
       description:
-        "Higher secondary education with a rigorous focus on Mathematics, Physics, and Chemistry, establishing analytical and problem-solving fundamentals.",
+        "Completed higher secondary education in the Science stream with high distinction across core sciences and mathematics.",
       bullets: [
-        "Stream: Science (Physics, Chemistry, Mathematics).",
-        "Institution and exact score details to be updated soon.",
+        "Core Subjects: Physics, Chemistry, Mathematics, and Biology (PCMB).",
+        "Graduated with 88.83% in the Higher Secondary Certificate (HSC) board examination.",
       ],
-      tags: ["Physics", "Chemistry", "Mathematics", "Analytical Problem-Solving"],
+      tags: ["Physics", "Chemistry", "Mathematics", "Biology", "Science Stream"],
       hasExpandableDetails: false,
-      isPlaceholder: true,
     },
     {
-      level: "Secondary School",
+      level: "Secondary School Certificate",
       degree: "Class 10th (SSC)",
       field: "General Secondary Curriculum",
-      institution: "High School",
-      period: "Completed",
+      institution: "Sahakar Vidya Mandir School, Deulgaon Raja",
+      period: "Completed in 2020",
       status: "Completed",
-      grade: "Details to be added",
+      grade: "Score: 93.80%",
       description:
-        "Foundational secondary school education with distinction in Mathematics and General Sciences.",
+        "Foundational secondary school education completed with academic distinction, building strong quantitative, mathematical, and analytical fundamentals.",
       bullets: [
-        "General secondary academic curriculum with strong grounding in quantitative reasoning.",
-        "School name and board marks details to be updated soon.",
+        "Secured 93.80% distinction in the Secondary School Certificate (SSC) board examination.",
+        "Strong foundation across Mathematics, Science, and Social Studies.",
       ],
-      tags: ["Mathematics", "Science", "General Curriculum"],
+      tags: ["Mathematics", "Science", "Social Studies", "Academic Distinction"],
       hasExpandableDetails: false,
-      isPlaceholder: true,
     },
   ];
 
@@ -174,8 +171,7 @@ const Academics = () => {
                   {/* Status & Grade Badges */}
                   <div className="flex flex-wrap sm:flex-col items-start sm:items-end gap-2 mt-1 sm:mt-0">
                     <Badge
-                      variant={index === 0 ? "default" : "outline"}
-                      className="text-xs font-semibold px-2.5 py-0.5"
+                      className="text-xs font-semibold px-2.5 py-0.5 bg-primary text-primary-foreground"
                     >
                       {item.grade}
                     </Badge>
@@ -189,7 +185,7 @@ const Academics = () => {
                 {/* Institution & Location details */}
                 <div className="flex items-center gap-2 text-xs text-muted-foreground mt-3 mb-3">
                   <MapPin className="w-3.5 h-3.5 text-primary shrink-0" />
-                  <span>{item.institution}</span>
+                  <span className="font-medium text-foreground/90">{item.institution}</span>
                 </div>
 
                 {/* Description */}
@@ -225,11 +221,11 @@ const Academics = () => {
                     </div>
                   </>
                 ) : (
-                  <div className="space-y-1.5 mb-4 text-xs text-muted-foreground">
+                  <div className="space-y-2 mb-4 text-xs sm:text-sm text-muted-foreground">
                     {item.bullets.map((bullet, bIdx) => (
-                      <div key={bIdx} className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground/60 mt-1.5 shrink-0" />
-                        <span>{bullet}</span>
+                      <div key={bIdx} className="flex items-start gap-2.5">
+                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                        <span className="leading-relaxed">{bullet}</span>
                       </div>
                     ))}
                   </div>
@@ -257,4 +253,3 @@ const Academics = () => {
 };
 
 export default Academics;
-

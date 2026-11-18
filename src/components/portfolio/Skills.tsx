@@ -64,10 +64,9 @@ const Skills = () => {
     {
       title: "Databases & Storage",
       icon: Database,
-      description: "Managing relational and NoSQL databases with schema design, normalization, and efficient querying.",
+      description: "Managing relational databases with schema design, normalization, and efficient SQL querying.",
       skills: [
         "PostgreSQL",
-        "MongoDB",
         "Prisma ORM",
         "SQL Querying",
         "Database Design",
@@ -82,9 +81,6 @@ const Skills = () => {
       skills: [
         "Git & GitHub",
         "Vite",
-        "Postman",
-        "Linux / CLI",
-        "Agile / Scrum",
         "Code Reviews",
         "Debugging",
         "Clean Architecture",
